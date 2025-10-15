@@ -10,11 +10,16 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/hayden-portfolio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
-    <header>
+    <header id="header">
         <div>
             <a href="index.html"><img width="200" src="img/Profile/MikeHayden_logo.svg" alt="Mike Hayden Logo"></a>
             <nav>
@@ -28,9 +33,9 @@
     </header>
 
     <!--Content Section START-->
-    <main>
+    <main id="work">
 
-        <div class="section_title-summary">
+        <div id="hero">
             <picture style="display:flex">
                 <source srcset="img/PayMe/PayMe_Hero2-1.png" media="(max-width:767px)">
                 <img src="img/PayMe/PayMe_Hero2.png" alt="PayMe App">
@@ -91,7 +96,7 @@
         </div>
 
 
-        <div class="wrapper">
+        <div id="wrapper">
             <div class="summary">
                 <div>
                     <h2>Project Summary</h2>
@@ -347,7 +352,8 @@
             <div class="result">
                 <div>
                     <h3>Results</h3>
-                    <p>The result is an intuitive platform for transacting with others while also acruing savings and
+                    <p>The result is an intuitive, engaging platform for transacting with others while also acruing
+                        savings and
                         categorizing transactions for budgeting insights.</p>
                     <p>The UI is clutter-free and will remain as utilitiarian as possible as the product evolves, per
                         user insights.</p>
@@ -362,15 +368,15 @@
             <div class="final-thoughts">
                 <div>
                     <h3>Final Thoughts</h3>
-                    <p>TWork is far from over for the PayMe app, as this is just the foundation for the MVP. I was very
+                    <p>Work is far from over for the PayMe app, as this is just the foundation for the MVP. I was very
                         surprised by the current comfort level payment app users have with conventional security. I
                         expected to dive deeper into this area from the start, but that was not the case. Moving
                         forward, I suspect additional insights after launch will provide more clarity in regard to
                         tightening up the budgeting feature. I'm expecting big changes for that feature to provide even
                         better utility.</p>
 
-                        <p>This project has been very rewarding, and I enjoyed relying on user insights to defend my design
-                        decisions to push forward to meet business goals.</p>
+                    <p>This project has been very rewarding, and I enjoyed relying on data to defend my design
+                        decisions and push forward to align with the business.</p>
                 </div>
             </div>
 
@@ -379,7 +385,7 @@
     </main>
     <!--Content Section END-->
 
-    <footer class="block" id="contact">
+    <footer id="footer">
         <div class="container">
             <h2>Get in Touch</h2>
             <p>Let's build something beautiful together!</p>

@@ -5,16 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mike Hayden, Design for Good</title>
-<!-- favicon -->
+    <!-- favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
-
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/hayden-portfolio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
-    <header>
+    <header id="header">
         <div>
             <a href="index.html"><img width="200" src="img/Profile/MikeHayden_logo.svg" alt="Mike Hayden Logo"></a>
             <nav>
@@ -38,35 +45,47 @@
 
         <!--My Work START-->
 
-        <div class="block">
-            <div class="container">
-                <h2>Case Studies</h2>
+        <div id="work">
+            <div>
+                <h3>Case Studies</h3>
                 <!--ROW 1-->
                 <div class="row">
                     <div class="column1">
-                        <a href="payme.html"><picture>
-                            <source srcset="img/PayMe/PayMe_Hero1-1.png" media="(max-width:767px)">
-                            <img src="img/PayMe/PayMe_Hero1.png" alt="PayMe App">
-                        </picture></a>
+                        <a href="payme.html">
+                            <picture>
+                                <source srcset="img/PayMe/PayMe_Hero1-1.png" media="(max-width:767px)">
+                                <img src="img/PayMe/PayMe_Hero1.png" alt="PayMe App">
+                            </picture>
+                        </a>
                     </div>
                     <div class="column2">
-                        <h3>The PayMe App</h3>
-                        <p>End-to-end product design of the webs-based payment system</p>
-                        
+                        <h4>The PayMe App</h4>
+                        <p>End-to-end product design of the web-based payment system</p>
                     </div>
+
+                    <div>
+                        <a href="payme.html" class="button"
+                        >Read more</a>
+                    </div>
+
                 </div>
                 <!--ROW 2-->
                 <div class="row">
                     <div class="column1">
-                        <a href="gemini_zodiac.html"><picture>
-                            <source srcset="img/Gemini/Gemini_Hero1-1.png" media="(max-width:767px)">
-                            <img src="img/Gemini/Gemini_Hero1.png" alt="PayMe App">
-                        </picture></a>
+                        <a href="gemini_zodiac.html">
+                            <picture>
+                                <source srcset="img/Gemini/Gemini_Hero1-1.png" media="(max-width:767px)">
+                                <img src="img/Gemini/Gemini_Hero1.png" alt="PayMe App">
+                            </picture>
+                        </a>
                     </div>
                     <div class="column2">
-                        <h3>Gemini's Zodiac AI Chatbot</h3>
+                        <h4>Gemini's Zodiac AI Chatbot</h4>
                         <p>AI integration to increase user engagement</p>
-                        
+                    </div>
+
+                    <div>
+                        <a href="gemini_zodiac.html" class="button">Read more</a>
                     </div>
                 </div>
             </div>
@@ -75,7 +94,7 @@
     </main>
     <!--Content Section END-->
 
-    <footer class="block" id="contact">
+    <footer id="footer">
         <div class="container">
             <h2>Get in Touch</h2>
             <p>Let's build something beautiful together!</p>

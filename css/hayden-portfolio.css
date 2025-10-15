@@ -1,0 +1,121 @@
+/* COLORS (All RGB)
+
+Text Grey: 86,85,103,100   HEX #565567
+Header Black: 42,41,63,100  HEX #2A293F
+*/
+
+
+/*    ———————————————————Font Families——————————————————————      */
+.caveat {
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.inter {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+/*    ———————————————————Styles——————————————————————      */
+
+body {
+    background-color: #ffffff;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #4a4a4a;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 2.986rem;
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 2.488rem;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 2.074rem;
+    font-weight: 700;
+}
+
+h4 {
+    font-size: 1.728rem;
+    font-weight: 700;
+}
+
+h5 {
+    font-size: 1.44rem;
+    font-weight: 700;
+}
+
+h6 {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 400rem
+}
+
+.small-caps {
+    font-size: 0.833rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    color: #544dd5;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:visited {
+    color: #5f5e76;
+}
+
+a:hover, a:focus {
+    color: #000000;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+a:active {
+    color: #545277;
+}
+
+.button {
+  display: inline-block; 
+  background-color: #544dd5;
+  color: #ffffff !important;
+  font-weight: 600;
+  padding: 12px 40px;
+  border-radius: 4px;
+  border-bottom: 2px solid #2833ac; 
+  transition: 0.2s opacity;
+}
+
+.button:hover {
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+#header {
+width:100%;
+}
