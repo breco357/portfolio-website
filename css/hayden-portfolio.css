@@ -2,6 +2,7 @@
 
 Text Grey: 86,85,103,100   HEX #565567
 Header Black: 42,41,63,100  HEX #2A293F
+Headeer Black: #1c1c1d
 */
 
 
@@ -20,7 +21,10 @@ Header Black: 42,41,63,100  HEX #2A293F
     font-style: normal;
 }
 
-/*    ———————————————————Styles——————————————————————      */
+/*    ———————————————————Foundations——————————————————————      */
+* {
+    box-sizing: border-box;
+}
 
 body {
     background-color: #ffffff;
@@ -31,12 +35,19 @@ body {
     color: #4a4a4a;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     line-height: 1.2;
+    letter-spacing: -.01ch;
+    word-spacing: -.1ch;
 }
 
 h1 {
-    font-size: 2.986rem;
+    font-size: 2.86rem;
     font-weight: 900;
 }
 
@@ -65,6 +76,12 @@ h6 {
     font-weight: 700;
 }
 
+.subhead {
+    font-size: 20px;
+    font-weight: 200;
+    font-style: italic;
+}
+
 p {
     font-size: 1rem;
     font-weight: 400rem
@@ -90,7 +107,8 @@ a:visited {
     color: #5f5e76;
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
     color: #000000;
     text-decoration: underline;
     font-weight: 600;
@@ -101,21 +119,176 @@ a:active {
 }
 
 .button {
-  display: inline-block; 
-  background-color: #544dd5;
-  color: #ffffff !important;
-  font-weight: 600;
-  padding: 12px 40px;
-  border-radius: 4px;
-  border-bottom: 2px solid #2833ac; 
-  transition: 0.2s opacity;
+    display: inline-block;
+    background-color: #544dd5;
+    color: #ffffff !important;
+    font-weight: 600;
+    padding: 12px 40px;
+    border-radius: 4px;
+    border-bottom: 2px solid #2833ac;
+    transition: 0.2s opacity;
 }
 
 .button:hover {
-  opacity: 0.8;
-  text-decoration: none;
+    opacity: 0.8;
+    text-decoration: none;
 }
 
-#header {
-width:100%;
+header {
+    background-color: #1c1c1d;
+    padding: 18px 10px;
+    text-align: center;
+    color: white;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6)  ; 
+	-webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6)  ; 
+	-moz-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6)  ; 
+    position:fixed;
+    width:100%;
+}
+.css-box-shadow {
+	width: [object Object]px; 
+	height: [object Object]px; 
+	background: #1C1C1D; 
+	border: solid #FFFFFF 0; 
+	box-shadow: 0 6px 27px rgba(0, 0, 0, 1)  ; 
+	-webkit-box-shadow: 0 6px 27px rgba(0, 0, 0, 1)  ; 
+	-moz-box-shadow: 0 6px 27px rgba(0, 0, 0, 1)  ; 
+}
+.logo {
+    max-width: 200px;
+}
+
+#work {
+    padding: 120px 0 0 0;
+    width: 100%;
+}
+
+.logo-mark {
+    max-width: 60px;
+}
+
+/* ——————————————————————Layout Styling————————————————————— */
+
+.center {
+    text-align: center;
+}
+
+.container {
+    padding: 0 15px;
+}
+
+.row {
+    margin: 24px 0;
+}
+
+nav>ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav>ul>li {
+    display: inline-block;
+}
+
+nav>ul>li>a {
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    color: #c6c6c6 !important;
+}
+
+nav>ul>li>a:hover {
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    color: #FFF !important;
+}
+
+nav>ul>li>a:visited {
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    color: #c6c6c6 !important;
+}
+
+nav>ul>li>a:active {
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    color: #FFF !important;
+}
+
+main {
+    padding: 80px 0 0 0;
+}
+
+#work .row {
+    padding-bottom: 25px;
+    border-bottom: 1px solid #565567;
+}
+
+#hero {
+    padding: 16px 0 100px 0;
+    background-color: #c6c6c6;
+    display: inline-block;
+    width: 100%;
+}
+
+#hero h1 {
+    text-align: center;
+}
+
+#hero p {
+    text-align: center;
+}
+
+.intro-sub {
+    display: inline-block;
+    width: 100%;
+    padding: 0 15px;
+    text-align: center;
+}
+
+.intro-sub-item {
+    display: inline-flex;
+    width: 250px;
+    column-gap:6px;
+    text-align:center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    font-size: .75rem;
+}
+
+footer .container {
+    text-align: center;
+}
+
+.social > ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social > ul > li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.vertical-space {
+    padding: 80px 0;
+}
+
+.no-bullet {
+    list-style-type: none;
+    padding:0;
+}
+
+.samples {
+    display:inline-flex;
+    direction: ltr;
+    width: 100%;
+   column-gap: 12px;
 }

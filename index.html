@@ -21,9 +21,9 @@
 </head>
 
 <body>
-    <header id="header">
+    <header>
         <div>
-            <a href="index.html"><img width="200" src="img/Profile/MikeHayden_logo.svg" alt="Mike Hayden Logo"></a>
+            <a href="index.html"><img  class="logo" src="img/Profile/MikeHayden_logo.svg" alt="Mike Hayden Logo"></a>
             <nav>
                 <ul>
                     <li><a href="index.html">Work</a></li>
@@ -37,16 +37,16 @@
     <!--Content Section START-->
     <main>
         <div>
-            <div>
+            <div id="hero">
                 <h1>Hi, my name is Mike Hayden. <br> <span>I'm a Product Designer in Colorado.</span></h1>
-                <p>I craft intuitive, impactful experiences that solve real problems.</p>
+                <p class="subhead">I craft intuitive, impactful experiences that solve real problems.</p>
             </div>
         </div>
 
         <!--My Work START-->
 
         <div id="work">
-            <div>
+            <div class="container">
                 <h3>Case Studies</h3>
                 <!--ROW 1-->
                 <div class="row">
@@ -58,20 +58,19 @@
                             </picture>
                         </a>
                     </div>
-                    <div class="column2">
+                    <div class="column2 center">
                         <h4>The PayMe App</h4>
                         <p>End-to-end product design of the web-based payment system</p>
                     </div>
 
-                    <div>
-                        <a href="payme.html" class="button"
-                        >Read more</a>
+                    <div class="center">
+                        <a href="payme.html" class="button">Read more</a>
                     </div>
 
                 </div>
                 <!--ROW 2-->
                 <div class="row">
-                    <div class="column1">
+                    <div class="column1 center">
                         <a href="gemini_zodiac.html">
                             <picture>
                                 <source srcset="img/Gemini/Gemini_Hero1-1.png" media="(max-width:767px)">
@@ -79,12 +78,12 @@
                             </picture>
                         </a>
                     </div>
-                    <div class="column2">
+                    <div class="column2 center">
                         <h4>Gemini's Zodiac AI Chatbot</h4>
                         <p>AI integration to increase user engagement</p>
                     </div>
 
-                    <div>
+                    <div class="center">
                         <a href="gemini_zodiac.html" class="button">Read more</a>
                     </div>
                 </div>
@@ -94,7 +93,7 @@
     </main>
     <!--Content Section END-->
 
-    <footer id="footer">
+    <footer id="contact">
         <div class="container">
             <h2>Get in Touch</h2>
             <p>Let's build something beautiful together!</p>
@@ -109,7 +108,7 @@
                 </div>
             </div>
 
-            <div>
+            <div class="social center">
                 <h3>Follow me on:</h3>
                 <ul>
                     <li><a href="https://dribbble.com/Breco" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
@@ -133,9 +132,10 @@
                 </ul>
             </div>
 
-            <div>
-                <a href="https://www.mikehayden.com/" target="_blank"><img src="img/Profile/MH_mark.svg"
-                        alt="placeholder image"><br>View my corporate design & art direction portfolio</a>
+            <div class="vertical-space">
+                <a href="https://www.mikehayden.com/" target="_blank"><img class="logo-mark" src="img/Profile/MH_mark.svg"
+                        alt="Mike Hayden Design"></a>
+                <p>View my corporate design & art direction portfolio</p>
             </div>
             <p>© Copyright 2025, Mike Hayden. All rights reserved.</p>
         </div>

@@ -19,14 +19,14 @@
 </head>
 
 <body>
-    <header id="header">
+    <header>
         <div>
-            <a href="index.html"><img width="200" src="img/Profile/MikeHayden_logo.svg" alt="Mike Hayden Logo"></a>
+            <a href="index.html"><img  class="logo" src="img/Profile/MikeHayden_logo.svg" alt="Mike Hayden Logo"></a>
             <nav>
                 <ul>
-                    <li><a href="index.html">Work</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li class="nav-item"><a href="index.html">Work</a></li>
+                    <li class="nav-item"><a href="about.html">About</a></li>
+                    <li class="nav-item"><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -36,7 +36,7 @@
     <main id="work">
 
         <div id="hero">
-            <picture style="display:flex">
+            <picture>
                 <source srcset="img/PayMe/PayMe_Hero2-1.png" media="(max-width:767px)">
                 <img src="img/PayMe/PayMe_Hero2.png" alt="PayMe App">
             </picture>
@@ -44,8 +44,8 @@
 
             <!-- intro subhead highlights -->
 
-            <div class="intro_sub">
-                <div><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            <div class="intro-sub center">
+                <div class="intro-sub-item"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                         class="lucide lucide-building2-icon lucide-building-2">
                         <path d="M10 12h4" />
@@ -56,7 +56,7 @@
                     </svg>
                     <span>Business: <strong>PayMe</strong></span>
                 </div>
-                <div>
+                <div class="intro-sub-item">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                         class="lucide lucide-factory-icon lucide-factory">
@@ -68,7 +68,7 @@
                     </svg>
                     <span>Industry: <strong>Fintech</strong></span>
                 </div>
-                <div>
+                <div class="intro-sub-item">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                         class="lucide lucide-handshake-icon lucide-handshake">
@@ -81,7 +81,7 @@
                     </svg>
                     <span>Role: <strong>Product Designer</strong></span>
                 </div>
-                <div>
+                <div class="intro-sub-item">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                         class="lucide lucide-chart-gantt-icon lucide-chart-gantt">
@@ -96,8 +96,8 @@
         </div>
 
 
-        <div id="wrapper">
-            <div class="summary">
+        <div class="container">
+            <div>
                 <div>
                     <h2>Project Summary</h2>
                     <p>I designed the PayMe payment app end-to-end, based on a gap in the fintech industry
@@ -113,7 +113,7 @@
             </div>
 
 
-            <div class="section_context">
+            <div class="container">
                 <h2>Context</h2>
                 <p>Payme is a web-based payment platform start-up supporting users with in-store & online payments,
                     peer-to-peer money transfers, savings automation, and customizable tracking & budgeting features.
@@ -137,7 +137,7 @@
 
             <!-- This section should be white on black -->
 
-            <div class="section_objective">
+            <div class="container">
                 <h2>Objectives</h2>
                 <div>
                     <h4>Business Objectives</h4>
@@ -170,7 +170,7 @@
 
 
 
-            <div class="approach">
+            <div>
                 <div>
                     <picture>
                         <source srcset="img/PayMe/PayMe_home-evolution_1x.png" media="(max-width:767px)">
@@ -385,7 +385,7 @@
     </main>
     <!--Content Section END-->
 
-    <footer id="footer">
+    <footer id="contact">
         <div class="container">
             <h2>Get in Touch</h2>
             <p>Let's build something beautiful together!</p>
@@ -400,7 +400,7 @@
                 </div>
             </div>
 
-            <div>
+            <div class="social center">
                 <h3>Follow me on:</h3>
                 <ul>
                     <li><a href="https://dribbble.com/Breco" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
@@ -424,9 +424,10 @@
                 </ul>
             </div>
 
-            <div>
-                <a href="https://www.mikehayden.com/" target="_blank"><img src="img/Profile/MH_mark.svg"
-                        alt="placeholder image"><br>View my corporate design & art direction portfolio</a>
+            <div class="vertical-space">
+                <a href="https://www.mikehayden.com/" target="_blank"><img class="logo-mark" src="img/Profile/MH_mark.svg"
+                        alt="Mike Hayden Design"></a>
+                <p>View my corporate design & art direction portfolio</p>
             </div>
             <p>© Copyright 2025, Mike Hayden. All rights reserved.</p>
         </div>
