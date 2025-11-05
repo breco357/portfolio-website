@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gemini Zodiak</title>
     <!-- favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/hayden-portfolio.css">
@@ -22,18 +22,22 @@
 </head>
 
 <body id="gemini">
-    <header id="header">
-        <div>
-            <a href="index.html"><img class="logo" src="img/Profile/MikeHayden_logo.svg" alt="Mike Hayden Logo"></a>
-            <nav>
-                <ul>
-                    <li class="nav-item"><a href="index.html">Work</a></li>
-                    <li class="nav-item"><a href="about.html">About</a></li>
-                    <li class="nav-item"><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+    <header>
+        <div class="container">
+            <div class="navtoggle" id="myNavtoggle">
+                <a href="index.html"><img class="logo" src="img/Profile/MikeHayden_logo.svg" alt="Mike Hayden Logo"></a>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Work</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i data-lucide="text-align-justify"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
+
 
     <!--Content Section START-->
     <main id="work">

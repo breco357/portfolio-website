@@ -1,9 +1,3 @@
-/* COLORS (All RGB)
-
-Text Grey: 86,85,103,100   HEX #565567
-Header Black: 42,41,63,100  HEX #2A293F
-Headeer Black: #1c1c1d
-*/
 
 
 /*    ———————————————————Font Families——————————————————————      */
@@ -152,7 +146,7 @@ header {
 }
 
 #work {
-    padding: 120px 0 0 0;
+    padding: 40px 0 0 0;
     width: 100%;
 }
 
@@ -242,7 +236,7 @@ header {
     width: 100%;
 }
 
-/* Mobile Menu Dropdown Fixes (Updated to Fix Icon Position) */
+/* -------------------------------------Mobile Menu Dropdown Fixes------------------------------------------------- */
 .navtoggle.responsive nav > ul {
     flex-direction: column; /* Stack items vertically */
     position: absolute;
