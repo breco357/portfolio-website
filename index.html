@@ -17,20 +17,24 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body id="home">
     <header>
-        <div>
-            <a href="index.html"><img class="logo" src="img/Profile/MikeHayden_logo.svg" alt="Mike Hayden Logo"></a>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Work</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+        <div class="container">
+            <div class="navtoggle" id="myNavtoggle">
+                <a href="index.html"><img class="logo" src="img/Profile/MikeHayden_logo.svg" alt="Mike Hayden Logo"></a>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Work</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i data-lucide="text-align-justify"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
 
@@ -1703,7 +1707,10 @@
             <p>© Copyright 2025, Mike Hayden. All rights reserved.</p>
         </div>
     </footer>
-<script src="js/scripts.js"></script>
+    <script>lucide.createIcons();</script>
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+        integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>

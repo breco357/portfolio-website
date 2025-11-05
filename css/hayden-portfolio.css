@@ -137,7 +137,6 @@ a:active {
 header {
     background-color: #1c1c1d;
     padding: 18px 10px;
-    text-align: center;
     color: white;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
     -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
@@ -146,18 +145,10 @@ header {
     width: 100%;
 }
 
-.css-box-shadow {
-    width: [object Object]px;
-    height: [object Object]px;
-    background: #1C1C1D;
-    border: solid #FFFFFF 0;
-    box-shadow: 0 6px 27px rgba(0, 0, 0, 1);
-    -webkit-box-shadow: 0 6px 27px rgba(0, 0, 0, 1);
-    -moz-box-shadow: 0 6px 27px rgba(0, 0, 0, 1);
-}
-
 .logo {
-    max-width: 200px;
+    max-width: 150px;
+    height: auto;
+    /* margin: 8px 0; */
 }
 
 #work {
@@ -238,14 +229,89 @@ header {
     width: 100%;
 }
 
+.navtoggle,
+.navtoggle.responsive {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.navtoggle.responsive li {
+    display: block;
+    width: 100%;
+}
+
+/* Mobile Menu Dropdown Fixes (Updated to Fix Icon Position) */
+.navtoggle.responsive nav > ul {
+    flex-direction: column; /* Stack items vertically */
+    position: absolute;
+    top: 100%; /* Drop down just below header */
+    left: 0;
+    width: 100%;
+    background-color: #1c1c1d;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+    z-index: 10; /* Ensure it layers above content */
+    margin: 0; /* Reset any margins */
+    padding: 0; /* No extra padding on ul */
+}
+
+.navtoggle.responsive nav > ul > li:nth-child(1),
+.navtoggle.responsive nav > ul > li:nth-child(2),
+.navtoggle.responsive nav > ul > li:nth-child(3) {
+    width: 100%; /* Full width for each menu item */
+    display: block; /* Ensure block flow in column flex */
+}
+
+.navtoggle.responsive nav > ul > li:last-child {
+    display: contents; /* Remove from flow so icon can be positioned independently */
+}
+
+.navtoggle.responsive nav > ul > li > a:not(.icon) {
+    display: block; /* Full-width clickable links */
+    padding: 15px 15px; /* More vertical padding for touch */
+    text-align: center; /* Optional: center-align for better mobile look */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Subtle separator (optional, remove if unwanted) */
+}
+
+/* Position icon fixed in header when menu open */
+.navtoggle.responsive .icon {
+    position: fixed;
+    top: 24px;
+    right: 25px;
+    z-index: 11; /* Above dropdown */
+    display: flex;
+    align-items: center;
+}
+
+.navtoggle .logo {
+    flex-shrink: 0;
+}
+
+.navtoggle li:not(:last-child) {
+    display: none;
+}
+
+.navtoggle li .icon {
+    position: static;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
 nav>ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
 }
 
-nav>ul>li {
-    display: inline-block;
-}
 
 nav>ul>li>a {
     padding: 0 15px;
@@ -280,7 +346,7 @@ nav>ul>li>a:active {
 }
 
 main {
-    padding: 80px 0 0 0;
+    padding: 64px 0 0 0;
 }
 
 #work .row {
@@ -367,12 +433,29 @@ footer .container {
 
 
 /* Medium Viewport */
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 641px) {
 
     header {
         text-align: unset;
         padding: 18px 18px;
 
+    }
+
+    .navtoggle li:not(:last-child) {
+        display: inline-block;
+    }
+
+    .navtoggle li:last-child {
+        display: none;
+    }
+
+    nav>ul {
+        margin: .25em 0;
+    }
+
+
+    .logo {
+        max-width: 200px;
     }
 
     nav {
@@ -427,6 +510,10 @@ footer .container {
 /* Large Viewport */
 @media only screen and (min-width: 1440px) {
 
+    .logo {
+        max-width: 200px;
+    }
+
     .col-lg-4 {
         width: 33.33%;
     }
@@ -440,48 +527,48 @@ footer .container {
     }
 
 
-.col-lg-5 {
-    width: 41.66%;
-}
+    .col-lg-5 {
+        width: 41.66%;
+    }
 
-.col-lg-7 {
-    width: 58.33%;
-}
+    .col-lg-7 {
+        width: 58.33%;
+    }
 
-.container {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-}
+    .container {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
-#about h2 {
-    margin: 4px;
-}
+    #about h2 {
+        margin: 4px;
+    }
 
-#about h3 {
-    margin-top: 10px;
-    margin-bottom: 0px;
-}
+    #about h3 {
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
 
-#about .col-md-6 {
-    width: 100%;
-    text-align: left;
-    padding-left: 108px;
-    margin-top: 0;
-}
+    #about .col-md-6 {
+        width: 100%;
+        text-align: left;
+        padding-left: 108px;
+        margin-top: 0;
+    }
 
-#work {
-    padding-top: 40px;
-}
+    #work {
+        padding-top: 40px;
+    }
 
-.intro-sub {
-    max-width: 100%;
-    padding: 0;
-}
+    .intro-sub {
+        max-width: 100%;
+        padding: 0;
+    }
 
-.intro-sub-item {
-    width: fit-content;
-    column-gap: 8px;
-    padding: 10px 40px;
-}
+    .intro-sub-item {
+        width: fit-content;
+        column-gap: 8px;
+        padding: 10px 40px;
+    }
 }
