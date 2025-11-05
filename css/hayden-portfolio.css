@@ -177,30 +177,45 @@ header {
 }
 
 @keyframes color-change {
-    from {fill: #edc655;}
-    to {fill: #f76414;}
+    from {
+        fill: #edc655;
+    }
+
+    to {
+        fill: #f76414;
+    }
 }
 
 .sun {
-  animation: 4s color-change infinite alternate linear;
+    animation: 4s color-change infinite alternate linear;
 }
 
 @keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(400px,50px);}
+    from {
+        transform: translate(0, 50px);
+    }
+
+    to {
+        transform: translate(400px, 50px);
+    }
 }
 
 .cloud-front {
-  animation: 30s cloud-move infinite alternate linear;
+    animation: 30s cloud-move infinite alternate linear;
 }
 
 @keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
+    from {
+        transform: translate(446px, 48px);
+    }
+
+    to {
+        transform: translate(100px, 48px);
+    }
 }
 
 .cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear;
+    animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
 /* ——————————————————————Layout Styling————————————————————— */
@@ -220,8 +235,7 @@ header {
 }
 
 .objectives {
-    width: 100;
-
+    width: 100%;
 }
 
 nav>ul {
@@ -349,7 +363,6 @@ footer .container {
 }
 
 
-
 /* ----------------------- Responsive Rules ----------------------------------*/
 
 
@@ -419,54 +432,56 @@ footer .container {
     }
 
     .objectives {
-        width: 100;
+        width: 100%;
         display: flex;
         justify-content: space-evenly;
-
+        background-color: #1c1c1d;
+        color: white;
     }
 
-    .col-lg-5 {
-        width: 41.66%;
-    }
 
-    .col-lg-7 {
-        width: 58.33%;
-    }
+.col-lg-5 {
+    width: 41.66%;
+}
 
-    .container {
-        max-width: 1200px;
-        margin-left: auto;
-        margin-right: auto;
-    }
+.col-lg-7 {
+    width: 58.33%;
+}
 
-    #about h2 {
-        margin: 4px;
-    }
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-    #about h3 {
-        margin-top: 10px;
-        margin-bottom: 0px;
-    }
+#about h2 {
+    margin: 4px;
+}
 
-    #about .col-md-6 {
-        width: 100%;
-        text-align: left;
-        padding-left: 108px;
-        margin-top: 0;
-    }
+#about h3 {
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
 
-    #work {
-        padding-top: 40px;
-    }
+#about .col-md-6 {
+    width: 100%;
+    text-align: left;
+    padding-left: 108px;
+    margin-top: 0;
+}
 
-    .intro-sub {
-        max-width: 100%;
-        padding: 0;
-    }
+#work {
+    padding-top: 40px;
+}
 
-    .intro-sub-item {
-        width: fit-content;
-        column-gap: 8px;
-        padding: 10px 40px;
-    }
+.intro-sub {
+    max-width: 100%;
+    padding: 0;
+}
+
+.intro-sub-item {
+    width: fit-content;
+    column-gap: 8px;
+    padding: 10px 40px;
+}
 }
