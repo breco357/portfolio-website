@@ -1,5 +1,3 @@
-
-
 /*    ———————————————————Font Families——————————————————————      */
 .caveat {
     font-family: "Caveat", cursive;
@@ -92,24 +90,24 @@ img {
 }
 
 a {
-    color: #544dd5;
+    color:grey;
     text-decoration: none;
     font-weight: 600;
 }
 
 a:visited {
-    color: #5f5e76;
+    color: grey;
 }
 
 a:hover,
 a:focus {
-    color: #000000;
+    color: white;
     text-decoration: underline;
     font-weight: 600;
 }
 
 a:active {
-    color: #545277;
+    color: grey;
 }
 
 .button {
@@ -153,150 +151,98 @@ header {
 .logo-mark {
     max-width: 60px;
 }
+
 /*    ———————————————————Foundations END——————————————————————      */
 
 
-
-/* ---------------------Animation--------------------------- */
-.berlin-illustration {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    align-self: center;
-    align-items: center;
-    max-height: 500px;
-}
-
-@keyframes color-change {
-    from {
-        fill: #edc655;
-    }
-
-    to {
-        fill: #f76414;
-    }
-}
-
-.sun {
-    animation: 4s color-change infinite alternate linear;
-}
-
-@keyframes cloud-move {
-    from {
-        transform: translate(0, 50px);
-    }
-
-    to {
-        transform: translate(400px, 50px);
-    }
-}
-
-.cloud-front {
-    animation: 30s cloud-move infinite alternate linear;
-}
-
-@keyframes cloud-move-reverse {
-    from {
-        transform: translate(446px, 48px);
-    }
-
-    to {
-        transform: translate(100px, 48px);
-    }
-}
-
-.cloud-back {
-    animation: 34s cloud-move-reverse infinite alternate linear;
-}
-/* ---------------------Animation END--------------------------- */
 
 
 /*COLORADO ANIMATION START –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 
 .cls-1 {
-        fill: none;
-      }
+    fill: none;
+}
 
-      .cls-2 {
-        fill: #4986b1;
-      }
+.cls-2 {
+    fill: #4986b1;
+}
 
-      .cls-3 {
-        fill: url(#linear-gradient);
-      }
+.cls-3 {
+    fill: url(#linear-gradient);
+}
 
-      .cls-4 {
-        fill: #76aecc;
-      }
+.cls-4 {
+    fill: #76aecc;
+}
 
-      .cls-5 {
-        fill: #215880;
-      }
+.cls-5 {
+    fill: #215880;
+}
 
-      .cls-6 {
-        clip-path: url(#clippath-10);
-      }
+.cls-6 {
+    clip-path: url(#clippath-10);
+}
 
-      .cls-7 {
-        fill: #22425a;
-      }
+.cls-7 {
+    fill: #22425a;
+}
 
-      .cls-8 {
-        clip-path: url(#clippath-1);
-      }
+.cls-8 {
+    clip-path: url(#clippath-1);
+}
 
-      .cls-9 {
-        clip-path: url(#clippath-3);
-      }
+.cls-9 {
+    clip-path: url(#clippath-3);
+}
 
-      .cls-10 {
-        clip-path: url(#clippath-4);
-      }
+.cls-10 {
+    clip-path: url(#clippath-4);
+}
 
-      .cls-11 {
-        clip-path: url(#clippath-2);
-      }
+.cls-11 {
+    clip-path: url(#clippath-2);
+}
 
-      .cls-12 {
-        clip-path: url(#clippath-7);
-      }
+.cls-12 {
+    clip-path: url(#clippath-7);
+}
 
-      .cls-13 {
-        clip-path: url(#clippath-6);
-      }
+.cls-13 {
+    clip-path: url(#clippath-6);
+}
 
-      .cls-14 {
-        clip-path: url(#clippath-9);
-      }
+.cls-14 {
+    clip-path: url(#clippath-9);
+}
 
-      .cls-15 {
-        clip-path: url(#clippath-8);
-      }
+.cls-15 {
+    clip-path: url(#clippath-8);
+}
 
-      .cls-16 {
-        clip-path: url(#clippath-5);
-      }
+.cls-16 {
+    clip-path: url(#clippath-5);
+}
 
-      .cls-17 {
-        fill: #9dc7d8;
-      }
+.cls-17 {
+    fill: #9dc7d8;
+}
 
-      .cls-18 {
-        fill: #1b343f;
-      }
+.cls-18 {
+    fill: #1b343f;
+}
 
-      .cls-19 {
-        fill: #1f5e8d;
-      }
+.cls-19 {
+    fill: #1f5e8d;
+}
 
-      .cls-20 {
-        fill: #274f6c;
-      }
+.cls-20 {
+    fill: #274f6c;
+}
 
-      .cls-21 {
-        clip-path: url(#clippath);
-      }
+.cls-21 {
+    clip-path: url(#clippath);
+}
 
 #clouds {
     animation: gentleDrift 15s infinite linear;
@@ -315,7 +261,7 @@ header {
 
 
 /*COLORADO ANIMATION END –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-      
+
 
 
 /* ——————————————————————Layout Styling————————————————————— */
@@ -351,31 +297,31 @@ header {
 }
 
 /* -------------------------------------Mobile Menu Dropdown Fixes START------------------------------------------------- */
-.navtoggle.responsive nav > ul {
+.navtoggle.responsive nav>ul {
     flex-direction: column;
     position: absolute;
-    top: 100%; 
+    top: 100%;
     left: 0;
     width: 100%;
     background-color: #1c1c1d;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
-    z-index: 10; 
-    margin: 0; 
-    padding: 0; 
+    z-index: 10;
+    margin: 0;
+    padding: 0;
 }
 
-.navtoggle.responsive nav > ul > li:nth-child(1),
-.navtoggle.responsive nav > ul > li:nth-child(2),
-.navtoggle.responsive nav > ul > li:nth-child(3) {
-    width: 100%; 
+.navtoggle.responsive nav>ul>li:nth-child(1),
+.navtoggle.responsive nav>ul>li:nth-child(2),
+.navtoggle.responsive nav>ul>li:nth-child(3) {
+    width: 100%;
     display: block;
 }
 
-.navtoggle.responsive nav > ul > li:last-child {
+.navtoggle.responsive nav>ul>li:last-child {
     display: contents;
 }
 
-.navtoggle.responsive nav > ul > li > a:not(.icon) {
+.navtoggle.responsive nav>ul>li>a:not(.icon) {
     display: block;
     padding: 15px 15px;
     text-align: center;
@@ -508,8 +454,22 @@ main {
     width: 100%;
 }
 
+.animation {
+    width: 100%;
+}
+
 footer .container {
     text-align: center;
+    color: white;
+    background-color: #1b343f;
+    padding: 0;
+}
+
+.legal {
+    font-size: .6rem;
+    margin: 0;
+    padding: 8px 0;
+    line-height: 1rem;
 }
 
 .social>ul {
@@ -543,16 +503,74 @@ footer .container {
     max-width: 300px;
     height: auto;
     border-radius: 50%;
-    display: block;
+    display: flex;
+    margin: 0 auto;
+    border-radius: 100%;
+    overflow: hidden;
+    margin-top: 40px;
+}
+
+.single-image {
+    display: inline-block;
+    width: 100%;
+    max-width: 300px;
     margin: 0 auto;
 }
+
+.mock-image {
+    display: inline-block;
+    align-content: center;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+
+
+
+
+.section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    max-height: 700px;
+    overflow: hidden;
+}
+
+.text-content {
+    flex: 1;
+    max-width: 600px;
+}
+
+.image-content {
+    display: block;
+    flex-shrink: 0;
+    max-width: 200px;
+    justify-self: center;
+}
+
+.image-content picture {
+    width: 100%;
+    height: auto;
+    display: block;
+    align-content: center;
+    ;
+}
+
+
+
+
 
 
 
 /* ----------------------- Responsive Rules ----------------------------------*/
 
 
-/* Medium Viewport */
+/* Medium Viewport ––––––––––––––––––––––––––––––––––––––––––––––––*/
 @media only screen and (min-width: 641px) {
 
 
@@ -623,10 +641,46 @@ footer .container {
         column-gap: 8px;
         padding: 10px;
     }
+
+
+    .section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 400px;
+        overflow: hidden;
+        gap: 20px !important;
+        align-items: flex-start;
+    }
+
+    .text-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 20px;
+    }
+
+    .image-content {
+        height: 100%;
+        overflow: hidden;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .image-content img {
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+
+
+
 }
 
 
-/* Large Viewport */
+/* Large Viewport ––––––––––––––––––––––––––––––––––––––––––––––––––––*/
 @media only screen and (min-width: 1440px) {
 
     .logo {
@@ -691,5 +745,9 @@ footer .container {
         width: fit-content;
         column-gap: 8px;
         padding: 10px 40px;
+    }
+
+    .section {
+        gap: 150px;
     }
 }
