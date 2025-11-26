@@ -90,13 +90,13 @@ img {
 }
 
 a {
-    color:grey;
+    color:rgb(198, 197, 197);
     text-decoration: none;
     font-weight: 600;
 }
 
 a:visited {
-    color: grey;
+    color: #808080;
 }
 
 a:hover,
@@ -107,7 +107,7 @@ a:focus {
 }
 
 a:active {
-    color: grey;
+    color: rgb(198, 197, 197);
 }
 
 .button {
@@ -258,6 +258,9 @@ header {
     }
 }
 
+#Layer_1 {
+margin-top:-1px;
+}
 
 
 /*COLORADO ANIMATION END –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
